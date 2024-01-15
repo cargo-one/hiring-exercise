@@ -54,6 +54,6 @@ The primary reasons we ask candidates of *all* levels to complete these exercise
     * a super-simple test suite if applicable (even one test is a bonus)
     * Some form of lightweight technical documentation (code comments are fine)
 
-5. When complete email a link to the repository and any special instructions to me@cargo.one and hiring-team@cargo.one in the cc.
+5. When complete email a link to the repository and any special instructions to coding.challenge@cargo.one in the cc.
 
 6. Sit back and relax. We'll review your submission and get back to you within 48 hours :smiley:
