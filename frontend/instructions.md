@@ -4,8 +4,6 @@
 TIMEBOX:    4 hours max. We mean it!
 LANGUAGES:  Javascript
 FRAMEWORKS: Any libraries you want
-TESTS:      nice to have, but not mandatory
-DOCS:       nice to have, but not mandatory
 ```
 
 # Overview
