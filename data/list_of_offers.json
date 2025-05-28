@@ -5,15 +5,15 @@
           "createdAt": "1702552385311254",
           "disclaimers": [],
           "dropoffLocation": {
-              "adr_building": "Temporary building",
-              "adr_po_code_city": "Temporary City",
-              "adr_street_number": "Temporary st. number",
-              "code": "",
-              "country": "",
-              "general_email": "",
-              "general_phone": "",
-              "handling_email": "",
-              "handling_phone": ""
+              "adr_building": "Cargo Terminal 2",
+              "adr_po_code_city": "Frankfurt",
+              "adr_street_number": "Cargo City Süd",
+              "code": "FRA",
+              "country": "Germany",
+              "general_email": "cargo@fra.com",
+              "general_phone": "+49123456789",
+              "handling_email": "handling@fra.com",
+              "handling_phone": "+49123456780"
           },
           "earliestAvailabilityTime": "2023-12-17T16:00:00+08:00",
           "extraFees": [
@@ -62,7 +62,7 @@
           "hasCargoOnlySegments": false,
           "id": "4618058c-1dc0-496c-8b17-3b8545ccb081",
           "latestAcceptanceTime": "2023-12-16T20:00:00+01:00",
-          "legalEntity": "cargo.one Airways Testing Airline",
+          "legalEntity": "cargo.one Airways",
           "offerItems": [
               {
                   "description": "route",
@@ -80,30 +80,30 @@
               }
           ],
           "pickupLocation": {
-              "adr_building": "Temporary building",
-              "adr_po_code_city": "Temporary City",
-              "adr_street_number": "Temporary st. number",
-              "code": "",
-              "country": "",
-              "general_email": "",
-              "general_phone": "",
-              "handling_email": "",
-              "handling_phone": ""
+              "adr_building": "Cargo Terminal 3",
+              "adr_po_code_city": "Shanghai",
+              "adr_street_number": "PVG Airport Road",
+              "code": "PVG",
+              "country": "China",
+              "general_email": "cargo@pvg.com",
+              "general_phone": "+861234567890",
+              "handling_email": "handling@pvg.com",
+              "handling_phone": "+861234567891"
           },
           "priceType": "PRICE_TYPE_DYNAMIC",
           "product": {
               "carrier": "cargo.one Airways",
-              "label": "",
+              "label": "Express",
               "logoUrl": "https://static-cargo-one.s3.eu-central-1.amazonaws.com/production/Product+Logo+-+cargo.one.png",
-              "product": "C1 General"
+              "product": "C1 Express"
           },
           "provider": "AIRLINE_PROVIDER_COA",
           "rank": {
               "best": 1,
-              "cheapest": 1,
+              "cheapest": 3,
               "earliest": 2
           },
-          "serviceLevel": "PROVIDER_SERVICE_LEVEL_GENERAL",
+          "serviceLevel": "PROVIDER_SERVICE_LEVEL_EXPRESS",
           "totalPrice": {
               "amount": "12.34",
               "currency": "EUR"
@@ -122,154 +122,426 @@
           }
       },
       {
-          "chargeableWeight": 341.4,
-          "createdAt": "1702552385311254",
-          "disclaimers": [],
+          "chargeableWeight": 520.8,
+          "createdAt": "1702552385311255",
+          "disclaimers": ["Temperature controlled"],
           "dropoffLocation": {
-              "adr_building": "Temporary building",
-              "adr_po_code_city": "Temporary City",
-              "adr_street_number": "Temporary st. number",
-              "code": "",
-              "country": "",
-              "general_email": "",
-              "general_phone": "",
-              "handling_email": "",
-              "handling_phone": ""
+              "adr_building": "Cargo Area A",
+              "adr_po_code_city": "New York",
+              "adr_street_number": "JFK International",
+              "code": "JFK",
+              "country": "USA",
+              "general_email": "cargo@jfk.com",
+              "general_phone": "+1987654321",
+              "handling_email": "handling@jfk.com",
+              "handling_phone": "+1987654322"
           },
-          "earliestAvailabilityTime": "2023-12-17T16:00:00+08:00",
+          "earliestAvailabilityTime": "2023-12-20T14:00:00-05:00",
           "extraFees": [
               {
                   "calculationRules": "",
                   "isFixedPrice": false,
                   "kiloPrice": {
-                      "amount": "10.00",
-                      "currency": "EUR"
+                      "amount": "12.50",
+                      "currency": "USD"
                   },
                   "lineItemNameKey": "",
                   "lineItemTooltipKey": "",
                   "price": {
-                      "amount": "100.00",
-                      "currency": "EUR"
+                      "amount": "125.00",
+                      "currency": "USD"
                   },
                   "type": "OFFER_EXTRA_FEE_TYPE_SCREENING"
+              },
+              {
+                  "calculationRules": "",
+                  "isFixedPrice": true,
+                  "kiloPrice": {
+                      "amount": "0.00",
+                      "currency": "USD"
+                  },
+                  "lineItemNameKey": "",
+                  "lineItemTooltipKey": "",
+                  "price": {
+                      "amount": "75.00",
+                      "currency": "USD"
+                  },
+                  "type": "OFFER_EXTRA_FEE_TYPE_TEMPERATURE_CONTROL"
               }
           ],
           "flightSegments": [
               {
                   "aircraftType": "HANDLING",
-                  "arrivalTime": "2023-12-17T00:00:00+01:00",
-                  "departureTime": "2023-12-16T20:00:00+01:00",
-                  "destination": "FRA",
+                  "arrivalTime": "2023-12-19T08:00:00-05:00",
+                  "departureTime": "2023-12-19T06:00:00-05:00",
+                  "destination": "JFK",
                   "flightNumber": "HANDLING",
-                  "origin": "FRA"
+                  "origin": "JFK"
               },
               {
-                  "aircraftType": "CO 777",
-                  "arrivalTime": "2023-12-17T12:00:00+08:00",
-                  "departureTime": "2023-12-17T00:00:00+01:00",
-                  "destination": "PVG",
-                  "flightNumber": "CO1234",
-                  "origin": "FRA"
+                  "aircraftType": "CO A350",
+                  "arrivalTime": "2023-12-20T08:30:00+01:00",
+                  "departureTime": "2023-12-19T20:45:00-05:00",
+                  "destination": "CDG",
+                  "flightNumber": "CO456",
+                  "origin": "JFK"
               },
               {
                   "aircraftType": "HANDLING",
-                  "arrivalTime": "2023-12-17T16:00:00+08:00",
-                  "departureTime": "2023-12-17T12:00:00+08:00",
-                  "destination": "PVG",
+                  "arrivalTime": "2023-12-20T14:00:00-05:00",
+                  "departureTime": "2023-12-20T10:00:00+01:00",
+                  "destination": "CDG",
                   "flightNumber": "HANDLING",
-                  "origin": "PVG"
+                  "origin": "CDG"
               }
           ],
-          "hasCargoOnlySegments": false,
-          "id": "4618058c-1dc0-496c-8b17-3b8545ccb081",
-          "latestAcceptanceTime": "2023-12-16T20:00:00+01:00",
-          "legalEntity": "cargo.one Airways Testing Airline",
+          "hasCargoOnlySegments": true,
+          "id": "5728159d-2ed1-596c-9b28-4c9656dcb192",
+          "latestAcceptanceTime": "2023-12-19T18:45:00-05:00",
+          "legalEntity": "Transatlantic Air Cargo",
           "offerItems": [
               {
-                  "description": "route",
+                  "description": "transatlantic route",
                   "isFixedPrice": false,
                   "kiloPrice": {
-                      "amount": "0.12",
-                      "currency": "EUR"
+                      "amount": "0.25",
+                      "currency": "USD"
                   },
                   "lineItemNameKey": "",
                   "lineItemTooltipKey": "",
                   "price": {
-                      "amount": "12.34",
-                      "currency": "EUR"
+                      "amount": "130.20",
+                      "currency": "USD"
                   }
               }
           ],
           "pickupLocation": {
-              "adr_building": "Temporary building",
-              "adr_po_code_city": "Temporary City",
-              "adr_street_number": "Temporary st. number",
-              "code": "",
-              "country": "",
-              "general_email": "",
-              "general_phone": "",
-              "handling_email": "",
-              "handling_phone": ""
+              "adr_building": "Cargo Terminal 2A",
+              "adr_po_code_city": "Paris",
+              "adr_street_number": "Charles de Gaulle Airport",
+              "code": "CDG",
+              "country": "France",
+              "general_email": "cargo@cdg.com",
+              "general_phone": "+33123456789",
+              "handling_email": "handling@cdg.com",
+              "handling_phone": "+33123456780"
           },
           "priceType": "PRICE_TYPE_DYNAMIC",
           "product": {
-              "carrier": "cargo.one Airways",
-              "label": "",
-              "logoUrl": "https://static-cargo-one.s3.eu-central-1.amazonaws.com/production/Product+Logo+-+cargo.one.png",
-              "product": "C1 General"
+              "carrier": "Transatlantic Air Cargo",
+              "label": "Premium",
+              "logoUrl": "https://example.com/transatlantic-logo.png",
+              "product": "Premium Cargo"
           },
-          "provider": "AIRLINE_PROVIDER_COA",
+          "provider": "AIRLINE_PROVIDER_TAC",
           "rank": {
-              "best": 1,
-              "cheapest": 1,
-              "earliest": 2
+              "best": 2,
+              "cheapest": 2,
+              "earliest": 1
           },
-          "serviceLevel": "PROVIDER_SERVICE_LEVEL_GENERAL",
+          "serviceLevel": "PROVIDER_SERVICE_LEVEL_PREMIUM",
           "totalPrice": {
-              "amount": "12.34",
-              "currency": "EUR"
+              "amount": "130.20",
+              "currency": "USD"
           },
           "totalPricePerKilo": {
-              "amount": "0.12",
-              "currency": "EUR"
+              "amount": "0.25",
+              "currency": "USD"
           },
           "totalPriceWithOtherCharges": {
-              "amount": "112.34",
-              "currency": "EUR"
+              "amount": "330.20",
+              "currency": "USD"
           },
           "totalPriceWithOtherChargesPerKilo": {
-              "amount": "0.33",
-              "currency": "EUR"
+              "amount": "0.63",
+              "currency": "USD"
           }
       },
       {
-          "chargeableWeight": 341.4,
-          "createdAt": "1702552385311254",
-          "disclaimers": [],
+          "chargeableWeight": 155.2,
+          "createdAt": "1702552385311256",
+          "disclaimers": ["Perishable goods", "Limited capacity"],
           "dropoffLocation": {
-              "adr_building": "Temporary building",
-              "adr_po_code_city": "Temporary City",
-              "adr_street_number": "Temporary st. number",
-              "code": "",
-              "country": "",
-              "general_email": "",
-              "general_phone": "",
-              "handling_email": "",
-              "handling_phone": ""
+              "adr_building": "Cargo Center B",
+              "adr_po_code_city": "Dubai",
+              "adr_street_number": "Dubai International Airport",
+              "code": "DXB",
+              "country": "UAE",
+              "general_email": "cargo@dxb.com",
+              "general_phone": "+9715555555",
+              "handling_email": "handling@dxb.com",
+              "handling_phone": "+9715555556"
           },
-          "earliestAvailabilityTime": "2023-12-17T16:00:00+08:00",
+          "earliestAvailabilityTime": "2023-12-22T10:30:00+03:00",
           "extraFees": [
               {
                   "calculationRules": "",
                   "isFixedPrice": false,
                   "kiloPrice": {
-                      "amount": "10.00",
+                      "amount": "8.00",
+                      "currency": "AED"
+                  },
+                  "lineItemNameKey": "",
+                  "lineItemTooltipKey": "",
+                  "price": {
+                      "amount": "80.00",
+                      "currency": "AED"
+                  },
+                  "type": "OFFER_EXTRA_FEE_TYPE_SCREENING"
+              },
+              {
+                  "calculationRules": "",
+                  "isFixedPrice": true,
+                  "kiloPrice": {
+                      "amount": "0.00",
+                      "currency": "AED"
+                  },
+                  "lineItemNameKey": "",
+                  "lineItemTooltipKey": "",
+                  "price": {
+                      "amount": "60.00",
+                      "currency": "AED"
+                  },
+                  "type": "OFFER_EXTRA_FEE_TYPE_PERISHABLE"
+              }
+          ],
+          "flightSegments": [
+              {
+                  "aircraftType": "HANDLING",
+                  "arrivalTime": "2023-12-21T18:00:00+03:00",
+                  "departureTime": "2023-12-21T16:00:00+03:00",
+                  "destination": "DXB",
+                  "flightNumber": "HANDLING",
+                  "origin": "DXB"
+              },
+              {
+                  "aircraftType": "AE 787",
+                  "arrivalTime": "2023-12-22T04:15:00+05:30",
+                  "departureTime": "2023-12-21T22:30:00+03:00",
+                  "destination": "BOM",
+                  "flightNumber": "AE789",
+                  "origin": "DXB"
+              },
+              {
+                  "aircraftType": "HANDLING",
+                  "arrivalTime": "2023-12-22T10:30:00+05:30",
+                  "departureTime": "2023-12-22T06:30:00+05:30",
+                  "destination": "BOM",
+                  "flightNumber": "HANDLING",
+                  "origin": "BOM"
+              }
+          ],
+          "hasCargoOnlySegments": false,
+          "id": "6839260e-3fe2-697d-0c39-5da767edc203",
+          "latestAcceptanceTime": "2023-12-21T20:30:00+03:00",
+          "legalEntity": "Middle East Cargo",
+          "offerItems": [
+              {
+                  "description": "regional route",
+                  "isFixedPrice": false,
+                  "kiloPrice": {
+                      "amount": "0.35",
+                      "currency": "AED"
+                  },
+                  "lineItemNameKey": "",
+                  "lineItemTooltipKey": "",
+                  "price": {
+                      "amount": "54.32",
+                      "currency": "AED"
+                  }
+              }
+          ],
+          "pickupLocation": {
+              "adr_building": "Cargo Zone 3",
+              "adr_po_code_city": "Mumbai",
+              "adr_street_number": "Chhatrapati Shivaji Airport",
+              "code": "BOM",
+              "country": "India",
+              "general_email": "cargo@bom.com",
+              "general_phone": "+912222222222",
+              "handling_email": "handling@bom.com",
+              "handling_phone": "+912222222223"
+          },
+          "priceType": "PRICE_TYPE_FIXED",
+          "product": {
+              "carrier": "Middle East Cargo",
+              "label": "Standard",
+              "logoUrl": "https://example.com/me-cargo-logo.png",
+              "product": "Standard Freight"
+          },
+          "provider": "AIRLINE_PROVIDER_MEC",
+          "rank": {
+              "best": 3,
+              "cheapest": 1,
+              "earliest": 3
+          },
+          "serviceLevel": "PROVIDER_SERVICE_LEVEL_STANDARD",
+          "totalPrice": {
+              "amount": "54.32",
+              "currency": "AED"
+          },
+          "totalPricePerKilo": {
+              "amount": "0.35",
+              "currency": "AED"
+          },
+          "totalPriceWithOtherCharges": {
+              "amount": "194.32",
+              "currency": "AED"
+          },
+          "totalPriceWithOtherChargesPerKilo": {
+              "amount": "1.25",
+              "currency": "AED"
+          }
+      },
+      {
+          "chargeableWeight": 285.6,
+          "createdAt": "1702552385311257",
+          "disclaimers": [],
+          "dropoffLocation": {
+              "adr_building": "Cargo Area South",
+              "adr_po_code_city": "Los Angeles",
+              "adr_street_number": "LAX International",
+              "code": "LAX",
+              "country": "USA",
+              "general_email": "cargo@lax.com",
+              "general_phone": "+13105555555",
+              "handling_email": "handling@lax.com",
+              "handling_phone": "+13105555556"
+          },
+          "earliestAvailabilityTime": "2023-12-23T16:45:00+09:00",
+          "extraFees": [
+              {
+                  "calculationRules": "",
+                  "isFixedPrice": false,
+                  "kiloPrice": {
+                      "amount": "11.00",
+                      "currency": "USD"
+                  },
+                  "lineItemNameKey": "",
+                  "lineItemTooltipKey": "",
+                  "price": {
+                      "amount": "110.00",
+                      "currency": "USD"
+                  },
+                  "type": "OFFER_EXTRA_FEE_TYPE_SCREENING"
+              }
+          ],
+          "flightSegments": [
+              {
+                  "aircraftType": "HANDLING",
+                  "arrivalTime": "2023-12-22T10:00:00-08:00",
+                  "departureTime": "2023-12-22T08:00:00-08:00",
+                  "destination": "LAX",
+                  "flightNumber": "HANDLING",
+                  "origin": "LAX"
+              },
+              {
+                  "aircraftType": "CO 787",
+                  "arrivalTime": "2023-12-23T14:30:00+09:00",
+                  "departureTime": "2023-12-22T12:15:00-08:00",
+                  "destination": "NRT",
+                  "flightNumber": "CO789",
+                  "origin": "LAX"
+              },
+              {
+                  "aircraftType": "HANDLING",
+                  "arrivalTime": "2023-12-23T16:45:00+09:00",
+                  "departureTime": "2023-12-23T14:45:00+09:00",
+                  "destination": "NRT",
+                  "flightNumber": "HANDLING",
+                  "origin": "NRT"
+              }
+          ],
+          "hasCargoOnlySegments": false,
+          "id": "7940371f-4gf3-798e-1d40-6eb878fed314",
+          "latestAcceptanceTime": "2023-12-22T10:15:00-08:00",
+          "legalEntity": "Pacific Air Freight",
+          "offerItems": [
+              {
+                  "description": "transpacific route",
+                  "isFixedPrice": false,
+                  "kiloPrice": {
+                      "amount": "0.28",
+                      "currency": "USD"
+                  },
+                  "lineItemNameKey": "",
+                  "lineItemTooltipKey": "",
+                  "price": {
+                      "amount": "79.97",
+                      "currency": "USD"
+                  }
+              }
+          ],
+          "pickupLocation": {
+              "adr_building": "Terminal 2",
+              "adr_po_code_city": "Tokyo",
+              "adr_street_number": "Narita International Airport",
+              "code": "NRT",
+              "country": "Japan",
+              "general_email": "cargo@nrt.com",
+              "general_phone": "+81333333333",
+              "handling_email": "handling@nrt.com",
+              "handling_phone": "+81333333334"
+          },
+          "priceType": "PRICE_TYPE_DYNAMIC",
+          "product": {
+              "carrier": "Pacific Air Freight",
+              "label": "Standard",
+              "logoUrl": "https://example.com/pacific-logo.png",
+              "product": "Standard Service"
+          },
+          "provider": "AIRLINE_PROVIDER_PAF",
+          "rank": {
+              "best": 2,
+              "cheapest": 2,
+              "earliest": 2
+          },
+          "serviceLevel": "PROVIDER_SERVICE_LEVEL_STANDARD",
+          "totalPrice": {
+              "amount": "79.97",
+              "currency": "USD"
+          },
+          "totalPricePerKilo": {
+              "amount": "0.28",
+              "currency": "USD"
+          },
+          "totalPriceWithOtherCharges": {
+              "amount": "189.97",
+              "currency": "USD"
+          },
+          "totalPriceWithOtherChargesPerKilo": {
+              "amount": "0.67",
+              "currency": "USD"
+          }
+      },
+      {
+          "chargeableWeight": 420.5,
+          "createdAt": "1702552385311258",
+          "disclaimers": ["Limited space"],
+          "dropoffLocation": {
+              "adr_building": "Main Cargo Hub",
+              "adr_po_code_city": "Cairo",
+              "adr_street_number": "Cairo International Airport",
+              "code": "CAI",
+              "country": "Egypt",
+              "general_email": "cargo@cai.com",
+              "general_phone": "+20123456789",
+              "handling_email": "handling@cai.com",
+              "handling_phone": "+20123456780"
+          },
+          "earliestAvailabilityTime": "2023-12-19T15:30:00+02:00",
+          "extraFees": [
+              {
+                  "calculationRules": "",
+                  "isFixedPrice": false,
+                  "kiloPrice": {
+                      "amount": "9.00",
                       "currency": "EUR"
                   },
                   "lineItemNameKey": "",
                   "lineItemTooltipKey": "",
                   "price": {
-                      "amount": "100.00",
+                      "amount": "90.00",
                       "currency": "EUR"
                   },
                   "type": "OFFER_EXTRA_FEE_TYPE_SCREENING"
@@ -278,88 +550,88 @@
           "flightSegments": [
               {
                   "aircraftType": "HANDLING",
-                  "arrivalTime": "2023-12-17T00:00:00+01:00",
-                  "departureTime": "2023-12-16T20:00:00+01:00",
-                  "destination": "FRA",
+                  "arrivalTime": "2023-12-18T12:00:00+02:00",
+                  "departureTime": "2023-12-18T10:00:00+02:00",
+                  "destination": "CAI",
                   "flightNumber": "HANDLING",
-                  "origin": "FRA"
+                  "origin": "CAI"
               },
               {
-                  "aircraftType": "CO 777",
-                  "arrivalTime": "2023-12-17T12:00:00+08:00",
-                  "departureTime": "2023-12-17T00:00:00+01:00",
-                  "destination": "PVG",
-                  "flightNumber": "CO1234",
-                  "origin": "FRA"
+                  "aircraftType": "CO A330",
+                  "arrivalTime": "2023-12-18T16:45:00+01:00",
+                  "departureTime": "2023-12-18T14:00:00+02:00",
+                  "destination": "MAD",
+                  "flightNumber": "CO567",
+                  "origin": "CAI"
               },
               {
                   "aircraftType": "HANDLING",
-                  "arrivalTime": "2023-12-17T16:00:00+08:00",
-                  "departureTime": "2023-12-17T12:00:00+08:00",
-                  "destination": "PVG",
+                  "arrivalTime": "2023-12-19T15:30:00+01:00",
+                  "departureTime": "2023-12-19T10:30:00+01:00",
+                  "destination": "MAD",
                   "flightNumber": "HANDLING",
-                  "origin": "PVG"
+                  "origin": "MAD"
               }
           ],
-          "hasCargoOnlySegments": false,
-          "id": "4618058c-1dc0-496c-8b17-3b8545ccb081",
-          "latestAcceptanceTime": "2023-12-16T20:00:00+01:00",
-          "legalEntity": "cargo.one Airways Testing Airline",
+          "hasCargoOnlySegments": true,
+          "id": "8051482g-5hg4-899f-2e51-7fc989gfe425",
+          "latestAcceptanceTime": "2023-12-18T12:00:00+02:00",
+          "legalEntity": "Mediterranean Cargo",
           "offerItems": [
               {
-                  "description": "route",
+                  "description": "continental route",
                   "isFixedPrice": false,
                   "kiloPrice": {
-                      "amount": "0.12",
+                      "amount": "0.22",
                       "currency": "EUR"
                   },
                   "lineItemNameKey": "",
                   "lineItemTooltipKey": "",
                   "price": {
-                      "amount": "12.34",
+                      "amount": "92.51",
                       "currency": "EUR"
                   }
               }
           ],
           "pickupLocation": {
-              "adr_building": "Temporary building",
-              "adr_po_code_city": "Temporary City",
-              "adr_street_number": "Temporary st. number",
-              "code": "",
-              "country": "",
-              "general_email": "",
-              "general_phone": "",
-              "handling_email": "",
-              "handling_phone": ""
+              "adr_building": "Cargo Area 4",
+              "adr_po_code_city": "Madrid",
+              "adr_street_number": "Barajas Airport",
+              "code": "MAD",
+              "country": "Spain",
+              "general_email": "cargo@mad.com",
+              "general_phone": "+34911234567",
+              "handling_email": "handling@mad.com",
+              "handling_phone": "+34911234568"
           },
           "priceType": "PRICE_TYPE_DYNAMIC",
           "product": {
-              "carrier": "cargo.one Airways",
-              "label": "",
-              "logoUrl": "https://static-cargo-one.s3.eu-central-1.amazonaws.com/production/Product+Logo+-+cargo.one.png",
-              "product": "C1 General"
+              "carrier": "Mediterranean Cargo",
+              "label": "Economy",
+              "logoUrl": "https://example.com/med-cargo-logo.png",
+              "product": "Economy Service"
           },
-          "provider": "AIRLINE_PROVIDER_COA",
+          "provider": "AIRLINE_PROVIDER_MCC",
           "rank": {
-              "best": 1,
-              "cheapest": 1,
-              "earliest": 2
+              "best": 3,
+              "cheapest": 2,
+              "earliest": 1
           },
-          "serviceLevel": "PROVIDER_SERVICE_LEVEL_GENERAL",
+          "serviceLevel": "PROVIDER_SERVICE_LEVEL_ECONOMY",
           "totalPrice": {
-              "amount": "12.34",
+              "amount": "92.51",
               "currency": "EUR"
           },
           "totalPricePerKilo": {
-              "amount": "0.12",
+              "amount": "0.22",
               "currency": "EUR"
           },
           "totalPriceWithOtherCharges": {
-              "amount": "112.34",
+              "amount": "182.51",
               "currency": "EUR"
           },
           "totalPriceWithOtherChargesPerKilo": {
-              "amount": "0.33",
+              "amount": "0.43",
               "currency": "EUR"
           }
       }

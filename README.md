@@ -31,14 +31,12 @@ The primary reasons we ask candidates of *all* levels to complete these exercise
 ## General Instructions
 
 1. Choose an exercise directory that matches the role you are applying to.
-    * [frontend](frontend/instructions.md)
     * [fullstack](fullstack/instructions.md)
 
 2. Read the `instructions.md` file in the matching directory. Be sure to read the instructions carefully and ask any clarifying questions either via [Github issues](https://github.com/cargo-one/hiring-exercise/issues) or by emailing me@cargo.one
 
 3. Create a new **private repository** for your exercise and add the cargo.one hiring team members as private collaborators (We do this to preserve your anonymity so it's not obvious you are looking for a new role.)
     * [Mo @ cargo.one (Engineering manager)](https://github.com/etshi) 
-    * [Deri O'Huiginn (Senior Frontend Engineer)](https://github.com/deri-cargo-one)
 
 4. Complete as much of the exercise as you can in 4 hours or less. Unless otherwise specified in the `instructions.md` document, you can use any language, framework, or toolchain you wish, although ideally, this would be Python, Javascript (VueJS), and SQL (purely because those are the languages we use to build Welcome and will be the most familiar with)
 
